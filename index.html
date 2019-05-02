@@ -1,1 +1,151 @@
-Hello World
+ <!DOCTYPE html>
+  <html>
+    <head>
+         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <style>
+        html{
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+        header,.page-footer{
+
+                background-color:#2D2D32;
+            }
+
+        #top-nav{
+
+                background-color: #2D2D32;
+                color:#FAC921!important;
+            }
+
+        #logo-container{
+                color: #FAC921;
+            }
+
+        body {
+                 display: flex;
+                 min-height: 100vh;
+                 flex-direction: column;
+             }
+        main {
+                 flex: 1 0 auto;
+             }
+
+        .anim{
+            width: 800px;
+            height: 100%;
+            position: relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto         
+            }
+
+        #box-shadow,#box-shadow1,#box-shadow2,#box-shadow3,#box-shadow4,#box-shadow5,#box{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-color: #FAC921 ;
+
+            }
+        #box{
+            z-index: 10;
+            }
+        #box-shadow{
+            opacity:0.4;
+            }
+        #box-shadow1{
+            opacity:0.4;
+            left: 21px;
+            }
+        #box-shadow2{
+            opacity:0.4;
+            left: 42px;
+            }
+        #box-shadow3{
+            opacity:0.4;
+            left: 63px;
+            }
+        #box-shadow4{
+            opacity:0.4;
+            left: 84px;
+            }
+
+        #box-shadow5{
+            opacity:0.4;
+            left: 105px;
+        }
+
+
+  </style>
+    </head>
+
+    <body>
+
+        <header>
+
+             <nav role="navigation" id="top-nav">
+                          <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Hkk</a>
+                            <ul class="right hide-on-med-and-down">
+                              <li id="stats-tab"><a href="" style="color:#FAC921;font-size: 12px">Blog</a></li>
+                              <li id="graphs-tab"><a href="" style="color:#FAC921;font-size: 12px">AboutMe</a></li>
+
+                            </ul>
+                          </div>
+            </nav>
+        </header>
+
+
+        <main>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+            <div class='anim'>
+                <p>InProgress</p>
+                <div id="box-shadow"></div>
+                  <div id="box-shadow1"></div>
+                  <div id="box-shadow2"></div>
+                  <div id="box-shadow3"></div>
+                  <div id="box-shadow4"></div>
+                  <div id="box-shadow5"></div>
+                <div id="box"></div>
+
+            </div>
+        </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class=""></div>  
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">Hkk</div>
+    </div>
+  </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script>
+        anime({
+          targets: '#box',
+          translateX: 105,
+          duration: 5000,
+          loop: 100,
+          delay: 10,
+          easing:'linear',
+        });
+    </script>
+    </body>
+  </html>
