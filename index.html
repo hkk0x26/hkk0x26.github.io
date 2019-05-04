@@ -1,7 +1,7 @@
  <!DOCTYPE html>
   <html>
     <head>
-         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -11,33 +11,65 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <style>
-        html{
+            html{
                 font-family: 'Josefin Sans', sans-serif;
+                scroll-behavior: smooth;
             }
 
-        header,.page-footer{
+            header,.page-footer{
 
                 background-color:#2D2D32;
             }
 
-        #top-nav{
 
-                background-color: #2D2D32;
-                color:#FAC921!important;
+
+            #logo-container{
+                
             }
 
-        #logo-container{
-                color: #FAC921;
-            }
-
-        body {
+            body {
                  display: flex;
                  min-height: 100vh;
                  flex-direction: column;
              }
-        main {
-                 flex: 1 0 auto;
+            main {
+                flex: 1 0 auto;
+                background-color: 	#2F2F2F;
              }
+            
+            #top-nav{
+                position: fixed;
+                background-color: #2D2D32;
+                z-index: 10;
+            }
+            
+            #about-web,#about-me,#content{
+                height: 600px;
+                margin-bottom: 1px;
+                background-color: #FFFFFF;                
+            }
+            #about-web{
+                
+                margin-top: 60px;
+            }
+            
+
+            
+            #canvas-photo{
+                
+                height: 100%;
+                background-color: antiquewhite;
+            }
+            
+            #web-row{
+                
+                height: 100%;
+                
+                
+            }
+
+
+
 
         .anim{
             width: 800px;
@@ -45,7 +77,8 @@
             position: relative;
             display: block;
             margin-left: auto;
-            margin-right: auto         
+            margin-right: auto   
+            
             }
 
         #box-shadow,#box-shadow1,#box-shadow2,#box-shadow3,#box-shadow4,#box-shadow5,#box{
@@ -53,10 +86,11 @@
             height: 20px;
             position: absolute;
             background-color: #FAC921 ;
+            
 
             }
         #box{
-            z-index: 10;
+            z-index: +1;
             }
         #box-shadow{
             opacity:0.4;
@@ -84,6 +118,8 @@
         }
 
 
+            
+            
   </style>
     </head>
 
@@ -91,11 +127,12 @@
 
         <header>
 
-             <nav role="navigation" id="top-nav">
+             <nav role="navigation" id="top-nav" class="z-depth-3">
                           <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Hkk</a>
                             <ul class="right hide-on-med-and-down">
-                              <li id="stats-tab"><a href="" style="color:#FAC921;font-size: 12px">Blog</a></li>
-                              <li id="graphs-tab"><a href="" style="color:#FAC921;font-size: 12px">AboutMe</a></li>
+                              <li id="stats-tab"><a href="#about-web" style="color:#FAC921;font-size: 8px">ABOUT WEBSITE</a></li>
+                              <li id="stats-tab"><a href="#content" style="color:#FAC921;font-size: 8px">COURCES</a></li>
+                              <li id="graphs-tab"><a href="#about-me" style="color:#FAC921;font-size: 8px">ABOUTME</a></li>
 
                             </ul>
                           </div>
@@ -104,13 +141,50 @@
 
 
         <main>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-            <div class='anim'>
+            
+            <div class="container" id="about-web">
+                <div class="row valign-wrapper" id="web-row" >
+                                      
+                        <div class="col s7" id="#canvas-photo">
+                             <img class="responsive-img" src="imgs/Mathematics.png">
+                        </div>
+                        <div class="col s5" id=" #web-content" style="font-size: 12px">
+                              <div class="card grey darken-4 left-align">
+                                <div class="card-content white-text" >
+                                  <span class="card-title">About this website</span>
+                                  <p>Mathematics is universal language which touches every aspects of our life, we just cannot even imagine our life without mathematics.</p><br>
+                                    <p>Being Engineer and software developer, lately realised how much importent to understand the 
+                                    fundamentals of Mathematics to understand and solve the complex problems. In otherway problems
+                                    are not complex, it's the approach we choose understand the problem. Mathematics provides the tools which make our life eaiser to understand and solve the complex problems.
+                                    </p><br>
+                                    <p>Many cutting edge techonlogies, such as Quantum computing, Material Science, Robotics, DeepLearnig and list goes on. which are changing the future of humanity are built up the mathematical models. Having good grasp fundamental of mathematics makes us to understand these concept with ease</p><br>
+                                    <p>This website is all about mathematics and it's application, you will find the materials to understand mathematics and how mathematics being applied in some the complex techonlogies to solve the problems in their respective field</p>
+                                </div>
+                                <div class="card-action">
+                                  <a href="#">Continue</a>
+                                  <a href="#content">Cources</a>
+                                </div>
+                              </div>
+                        </div>
+                </div>
+            </div>
+            <div class="container"  id="content">
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+              <div class='anim '>
                 <p>InProgress</p>
                 <div id="box-shadow"></div>
                   <div id="box-shadow1"></div>
@@ -121,6 +195,40 @@
                 <div id="box"></div>
 
             </div>
+
+            </div>
+            <div class="container" id="about-me">
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+              <div class='anim'>
+                <p>InProgress</p>
+                <div id="box-shadow"></div>
+                  <div id="box-shadow1"></div>
+                  <div id="box-shadow2"></div>
+                  <div id="box-shadow3"></div>
+                  <div id="box-shadow4"></div>
+                  <div id="box-shadow5"></div>
+                <div id="box"></div>
+
+            </div>
+
+
+            </div>
+            
+            
         </main>
 
   <footer class="page-footer">
@@ -138,14 +246,14 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/anime.min.js"></script>
     <script>
-        anime({
-          targets: '#box',
-          translateX: 105,
-          duration: 5000,
-          loop: 100,
-          delay: 10,
-          easing:'linear',
-        });
+      anime({
+        targets: '#box',
+        translateX: 105,
+        duration: 5000,
+        loop: 100,
+        delay: 10,
+        easing:'linear',
+      });
     </script>
     </body>
   </html>
